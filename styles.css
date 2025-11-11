@@ -92,6 +92,39 @@ ul li a:hover {
     display: block;
 }
 
+/* Schedule table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-top: 12px;
+}
+
+.schedule-table thead th {
+    background-color: #005a87;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 12px;
+}
+
+.schedule-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e6e6e6;
+    vertical-align: top;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+.schedule-table td:first-child {
+    font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 800px) {
     .container {
