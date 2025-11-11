@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentals of AI for Manufacturing</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header id="header">
+        <img src="logo.png" alt="Course Logo" height="100" />
+        <h1>Fundamentals of AI for Manufacturing</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="navigation-menu">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="Course-Description.html">Course Description</a></li>
+                <li><a href="Timetable-&-Online-Support.html">Timetable & Online Support</a></li>
+                <li><a href="Topics-&-Schedule.html">Topics & Schedule</a></li>
+                <li><a href="Requirements-fees-and-Waivers.html">Requirements, Fees, and Waivers</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Apply.html">Apply</a></li>
+                <li><a href="mailto:fundamentalsai.nmis@gmail.com">Contact Us</a></li>
+            </ul>
+
+            <div class="collaboration-section">
+                <h2>In collaboration with</h2>
+                <img src="nmis.png" alt="NMIS Logo" />
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="course-intro">
+                <h2>Welcome to Fundamentals of AI for Manufacturing</h2>
+                <p>
+                    Dive into the transformative power of AI in manufacturing with our course
+                    "Fundamentals of AI for Manufacturing". This program demystifies AI, focusing on its foundational
+                    principles and practical applications in the industrial sector. Through theoretical insights and
+                    hands-on workshops, explore key modeling techniques and their impact on manufacturing processes.
+                    Ideal for managers, professionals, and non-coders, the course offers enriched explanations with
+                    examples, allowing participants to experiment with AI models. Join us to revolutionize your
+                    manufacturing strategies.
+                </p>
+            </section>
+
+            <section class="prerequisites">
+                <h2>Prerequisites</h2>
+                <p>
+                    This course has no prerequisites. Participants are not required to have prior knowledge of coding
+                    or artificial intelligence/machine learning (AI/ML). Designed with industry professionals in mind,
+                    this course aims to introduce the fundamentals of AI in manufacturing to those with expertise in
+                    the field, regardless of their background in technology. Whether you're new to AI/ML or seeking to
+                    understand its application in manufacturing, this course is tailored for you.
+                </p>
+            </section>
+
+            <section class="course-outline">
+                <h2>Structure of the Programme / Course Outline</h2>
+                <p>
+                    We adopt a modular approach to the course design, ensuring a comprehensive and systematic exploration
+                    of key concepts in AI for manufacturing. A detailed mind map supporting this modular approach will be
+                    provided to facilitate your learning journey.
+                </p>
+
+                <h3>Course Topics</h3>
+                <ul>
+                    <li>The basic idea of Artificial Neural Network (ANN)</li>
+                    <li>ANN Training – Data Requirements - Overtraining</li>
+                    <li>Generic algorithms (GA) and their utilisation in training engine</li>
+                    <li>ANN Training – fitting engine</li>
+                    <li>Convolution ANN</li>
+                    <li>Regression problems</li>
+                    <li>Autoencoders</li>
+                    <li>ANN for working with time series</li>
+                    <li>Recurrent ANN</li>
+                    <li>Q-learning (basics)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Highlight active navigation link (robust for GitHub Pages)
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.sidebar a');
+
+            function getCurrentPage() {
+                var path = window.location.pathname; // e.g., /repo/overview.html or /repo/
+                var file = path.substring(path.lastIndexOf('/') + 1);
+                if (!file || file === '/') file = 'index.html';
+                return file.toLowerCase();
+            }
+
+            var current = getCurrentPage();
+
+            links.forEach(function (link) {
+                var href = link.getAttribute('href');
+                if (!href || href.startsWith('mailto:') || href.startsWith('http')) return;
+
+                var linkFile = href.split('/').pop().toLowerCase() || 'index.html';
+                if (linkFile === current) {
+                    link.classList.add('active-link');
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
