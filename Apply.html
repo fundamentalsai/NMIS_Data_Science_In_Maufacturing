@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now - Data Science for Manufacturing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header-v2">
+        <div class="wrap header-inner-v2">
+            <a class="brand-v2" href="index.html">
+                <img src="assets/NMIS.png" alt="Course Logo" height="32" />
+                <span>Data Science for Manufacturing</span>
+            </a>
+            <button class="nav-toggle-v2" aria-expanded="false" aria-controls="site-nav-v2">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav class="site-nav-v2" id="site-nav-v2">
+                <ul>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="Course-Description.html">Course Description</a></li>
+                    <li><a href="Topics-&-Schedule.html">Topics &amp; Schedule</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                    <li><a href="Apply.html" class="btn-v2 primary small">Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero-v2 hero-small">
+        <div class="wrap hero-inner-v2">
+            <div class="hero-copy-v2">
+                <h1>Apply to the Course</h1>
+                <p>Take the first step towards mastering data science for manufacturing. Complete the application form below.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="section-v2">
+        <div class="content-wrap" style="max-width: 800px;">
+            <article class="card-v2">
+                <h2 style="margin-top: 0;">Application Form</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">Please fill out all required fields marked with an asterisk (*).</p>
+
+                <form id="applicationForm" class="application-form" method="POST" action="submit-application.aspx">
+                    
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" />
+                            </div>
+                            <div class="form-group">
+                                <label for="postcode">Postcode</label>
+                                <input type="text" id="postcode" name="postcode" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select a country</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="AU">Australia</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="IN">India</option>
+                                <option value="CN">China</option>
+                                <option value="JP">Japan</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Professional Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Professional Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization *</label>
+                            <input type="text" id="company" name="company" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title *</label>
+                            <input type="text" id="jobTitle" name="jobTitle" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <input type="text" id="department" name="department" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="industry">Industry Sector *</label>
+                            <select id="industry" name="industry" required>
+                                <option value="">Select an industry</option>
+                                <option value="Automotive">Automotive</option>
+                                <option value="Aerospace">Aerospace</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Pharmaceutical">Pharmaceutical</option>
+                                <option value="Food & Beverage">Food & Beverage</option>
+                                <option value="Chemical">Chemical</option>
+                                <option value="Textile">Textile</option>
+                                <option value="Metal Fabrication">Metal Fabrication</option>
+                                <option value="Plastics">Plastics</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="yearsExperience">Years of Experience in Manufacturing *</label>
+                            <select id="yearsExperience" name="yearsExperience" required>
+                                <option value="">Select years</option>
+                                <option value="0-2">0-2 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="11-15">11-15 years</option>
+                                <option value="16+">16+ years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Educational Background -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Educational Background</h3>
+                        
+                        <div class="form-group">
+                            <label for="highestDegree">Highest Degree Obtained *</label>
+                            <select id="highestDegree" name="highestDegree" required>
+                                <option value="">Select degree</option>
+                                <option value="High School">High School</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="Doctorate">Doctorate</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fieldOfStudy">Field of Study</label>
+                            <input type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="e.g., Mechanical Engineering, Computer Science" />
+                        </div>
+                    </div>
+
+                    <!-- Technical Background -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Technical Background</h3>
+                        
+                        <div class="form-group">
+                            <label for="programmingExperience">Programming Experience *</label>
+                            <select id="programmingExperience" name="programmingExperience" required>
+                                <option value="">Select level</option>
+                                <option value="None">No experience</option>
+                                <option value="Beginner">Beginner (basic syntax)</option>
+                                <option value="Intermediate">Intermediate (can write scripts)</option>
+                                <option value="Advanced">Advanced (professional developer)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pythonExperience">Python Experience</label>
+                            <select id="pythonExperience" name="pythonExperience">
+                                <option value="">Select level</option>
+                                <option value="None">No experience</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dataAnalysisExperience">Data Analysis Experience</label>
+                            <select id="dataAnalysisExperience" name="dataAnalysisExperience">
+                                <option value="">Select level</option>
+                                <option value="None">No experience</option>
+                                <option value="Basic">Basic (Excel, simple statistics)</option>
+                                <option value="Intermediate">Intermediate (SQL, visualization tools)</option>
+                                <option value="Advanced">Advanced (ML, statistical modeling)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="technicalTools">Familiar Tools/Software (select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="Excel" />
+                                    <span>Excel</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="SQL" />
+                                    <span>SQL</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="Python" />
+                                    <span>Python</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="R" />
+                                    <span>R</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="Tableau" />
+                                    <span>Tableau</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="Power BI" />
+                                    <span>Power BI</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="MATLAB" />
+                                    <span>MATLAB</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="tools" value="ERP Systems" />
+                                    <span>ERP Systems</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Course Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="cohort">Preferred Cohort *</label>
+                            <select id="cohort" name="cohort" required>
+                                <option value="">Select cohort</option>
+                                <option value="May 2025">May 2025</option>
+                                <option value="September 2025">September 2025</option>
+                                <option value="January 2026">January 2026</option>
+                                <option value="Undecided">Undecided</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="howDidYouHear">How did you hear about this course? *</label>
+                            <select id="howDidYouHear" name="howDidYouHear" required>
+                                <option value="">Select option</option>
+                                <option value="Colleague">Colleague/Word of mouth</option>
+                                <option value="Company">Company/Employer</option>
+                                <option value="NMIS Website">NMIS Website</option>
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="Email">Email Newsletter</option>
+                                <option value="Conference">Conference/Event</option>
+                                <option value="Search Engine">Search Engine</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enrollmentType">Enrollment Type *</label>
+                            <select id="enrollmentType" name="enrollmentType" required>
+                                <option value="">Select type</option>
+                                <option value="Individual">Individual (Self-funded)</option>
+                                <option value="Corporate">Corporate (Company-sponsored)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="companyContactGroup" style="display: none;">
+                            <label for="companyContact">Company Contact for Billing</label>
+                            <input type="text" id="companyContact" name="companyContact" placeholder="Name and email of billing contact" />
+                        </div>
+                    </div>
+
+                    <!-- Motivation & Goals -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Motivation & Goals</h3>
+                        
+                        <div class="form-group">
+                            <label for="motivation">Why do you want to take this course? *</label>
+                            <textarea id="motivation" name="motivation" rows="4" required placeholder="Please describe your motivation and what you hope to achieve..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goals">What specific skills or knowledge are you hoping to gain? *</label>
+                            <textarea id="goals" name="goals" rows="4" required placeholder="Describe your learning goals..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="applicationPlans">How do you plan to apply what you learn in your work?</label>
+                            <textarea id="applicationPlans" name="applicationPlans" rows="4" placeholder="Optional: Describe potential applications..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Additional Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="specialRequirements">Do you have any special requirements or accommodations?</label>
+                            <textarea id="specialRequirements" name="specialRequirements" rows="3" placeholder="e.g., accessibility needs, time zone considerations"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Additional Comments or Questions</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Any other information you'd like to share..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Consent & Agreement -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">Consent & Agreement</h3>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="dataConsent" required />
+                                <span>I consent to NMIS storing and processing my personal data for the purpose of this application and course enrollment. *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="emailConsent" />
+                                <span>I would like to receive updates about future courses and events from NMIS.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="termsAccept" required />
+                                <span>I have read and agree to the <a href="#" style="color: var(--accent-gray);">Terms and Conditions</a>. *</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Hidden fields for tracking -->
+                    <input type="hidden" id="submissionDate" name="submissionDate" />
+                    <input type="hidden" id="applicationId" name="applicationId" />
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn-v2 primary">Submit Application</button>
+                        <button type="reset" class="btn-v2 ghost">Clear Form</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="section-v2">
+        <div class="content-wrap">
+            <article class="card-v2 cta-card">
+                <h2>Need Help with Your Application?</h2>
+                <p>If you have any questions or need assistance, please don't hesitate to contact us.</p>
+                <div class="cta-actions">
+                    <a href="mailto:fundamentalsai.nmis@gmail.com" class="btn-v2 primary">Email Us</a>
+                    <a href="FAQ.html" class="btn-v2 ghost">View FAQ</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="site-footer-v2">
+        <div class="wrap footer-inner-v2">
+            <p>&copy; <span id="year-v2"></span> Data Science for Manufacturing</p>
+            <p><a href="mailto:fundamentalsai.nmis@gmail.com">fundamentalsai.nmis@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year-v2').textContent = new Date().getFullYear();
+
+        // Set submission date and generate application ID
+        document.getElementById('submissionDate').value = new Date().toISOString();
+        document.getElementById('applicationId').value = 'APP-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+
+        // Show/hide company contact field based on enrollment type
+        document.getElementById('enrollmentType').addEventListener('change', function() {
+            const companyContactGroup = document.getElementById('companyContactGroup');
+            if (this.value === 'Corporate') {
+                companyContactGroup.style.display = 'block';
+            } else {
+                companyContactGroup.style.display = 'none';
+            }
+        });
+
+        // Mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle-v2');
+        const siteNav = document.querySelector('.site-nav-v2');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                const isOpen = siteNav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+        }
+
+        // Form validation
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim() && field.type !== 'checkbox') {
+                    isValid = false;
+                    field.style.borderColor = '#ff3b30';
+                } else if (field.type === 'checkbox' && !field.checked) {
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields marked with *');
+                return;
+            }
+            
+            // If valid, you can submit to your Windows Forms endpoint
+            // For now, show success message
+            alert('Application submitted successfully! We will contact you within 2 business days.');
+            
+            // In production, uncomment this to actually submit:
+            // this.submit();
+        });
+
+        // Highlight active nav link
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.site-nav-v2 a');
+            
+            function getCurrentPage() {
+                const path = window.location.pathname;
+                const file = path.substring(path.lastIndexOf('/') + 1);
+                if (!file || file === '/') return 'index.html';
+                return file.toLowerCase();
+            }
+
+            const current = getCurrentPage();
+
+            links.forEach(function (link) {
+                const href = link.getAttribute('href');
+                if (!href || href.startsWith('mailto:') || href.startsWith('http')) return;
+
+                const linkFile = href.split('/').pop().toLowerCase() || 'index.html';
+                if (linkFile === current) {
+                    link.style.background = 'rgba(0, 0, 0, 0.06)';
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
