@@ -922,6 +922,205 @@ p {
     font-size: 18px;
 }
 
+/* Team Page Specific Styles */
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Team Member Cards */
+.team-member-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.team-member-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #86868b 0%, #636366 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.team-member-info h3 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
+.team-member-role {
+    color: var(--accent-gray);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+}
+
+.team-member-bio {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.team-member-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.expertise-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--accent-gray);
+    font-weight: 500;
+}
+
+.team-member-contact {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--accent-gray);
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* Projects Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Project Cards */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--glass-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.project-status {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status.active {
+    background: rgba(52, 199, 89, 0.15);
+    color: #34c759;
+}
+
+.project-status.completed {
+    background: rgba(134, 134, 139, 0.15);
+    color: var(--accent-gray);
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 21px;
+    color: var(--text-primary);
+}
+
+.project-partner {
+    font-size: 14px;
+    color: var(--accent-gray);
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--accent-gray);
+    font-weight: 500;
+}
+
+.project-team {
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.project-team strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 /* Course Description Page Specific Styles */
 
 /* Video Card */
@@ -1451,6 +1650,35 @@ p {
         align-items: flex-start;
         gap: 4px;
         padding: 12px;
+    }
+
+    /* Team page responsive */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-member-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .avatar-large {
+        margin: 0 auto;
+    }
+
+    .team-member-expertise {
+        justify-content: center;
+    }
+
+    .team-member-contact {
+        justify-content: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
