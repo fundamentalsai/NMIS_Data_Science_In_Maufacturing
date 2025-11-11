@@ -1,0 +1,110 @@
+/* Base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #005a87;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Sidebar and main side by side */
+    padding: 20px;
+    gap: 0; /* keep consistent spacing managed by sidebar/main paddings */
+}
+
+.sidebar {
+    flex: 0 1 200px; /* up to 200px, can shrink */
+    padding-right: 20px;
+    margin-right: 20px; /* space between sidebar and main */
+}
+
+.main-content {
+    flex: 1; /* take remaining space */
+    padding-left: 40px; /* consistent spacing from sidebar */
+    background: #ffffff;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Navigation */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #005a87;
+    font-weight: bold;
+    display: block; /* entire item clickable */
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Active link highlight */
+.active-link {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Content-specific lists */
+.course-outline ul {
+    list-style-type: disc; /* show bullets here */
+    padding-left: 20px; /* indent the list */
+    margin-top: 8px;
+}
+
+/* Collaboration */
+.collaboration-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        padding: 12px;
+    }
+    .sidebar {
+        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 16px;
+    }
+    .main-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
