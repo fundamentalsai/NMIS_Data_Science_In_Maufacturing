@@ -731,6 +731,333 @@ p {
     flex-wrap: wrap;
 }
 
+/* Course Description Page Specific Styles */
+
+/* Video Card */
+.video-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-info {
+    padding: 24px 28px;
+}
+
+.video-info h3 {
+    margin: 0 0 8px 0;
+}
+
+.video-info p {
+    margin: 0;
+}
+
+/* Outcomes Grid */
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.outcome-category h3 {
+    font-size: 21px;
+    margin: 0 0 16px 0;
+    color: var(--text-primary);
+}
+
+.outcome-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.outcome-list li {
+    padding-left: 24px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.outcome-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gray);
+    font-weight: bold;
+}
+
+/* Accordion */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accordion-item {
+    background: var(--glass-bg);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px 28px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.week-number {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent-gray);
+    min-width: 60px;
+}
+
+.week-title {
+    flex: 1;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.accordion-icon {
+    font-size: 24px;
+    color: var(--accent-gray);
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px;
+}
+
+.week-details {
+    padding: 0 28px 28px 28px;
+}
+
+.week-section {
+    margin-bottom: 24px;
+}
+
+.week-section h4 {
+    font-size: 17px;
+    margin: 0 0 12px 0;
+    color: var(--text-primary);
+}
+
+.week-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.week-section li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+.week-section li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gray);
+}
+
+.week-materials {
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.material-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.material-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 980px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.material-link:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.material-icon {
+    font-size: 16px;
+}
+
+/* Resource Cards */
+.resource-card {
+    text-align: center;
+}
+
+.resource-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.resource-card h3 {
+    margin-bottom: 8px;
+}
+
+.resource-card p {
+    margin: 0;
+}
+
+/* Download Grid */
+.download-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download-item {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 14px;
+    transition: background 0.3s ease;
+}
+
+.download-item:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.download-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--glass-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.download-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 17px;
+    color: var(--text-primary);
+}
+
+.download-info p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.download-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-card-small {
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-thumbnail {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-thumbnail iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-card-info {
+    padding: 16px 20px;
+}
+
+.video-card-info h4 {
+    margin: 0 0 4px 0;
+    font-size: 17px;
+    color: var(--text-primary);
+}
+
+.video-card-info p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
 /* Responsive */
 @media (max-width: 800px) {
     h1 {
@@ -874,6 +1201,43 @@ p {
 
     .cta-actions .btn-v2 {
         width: 100%;
+    }
+
+    /* Course Description responsive */
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .download-icon {
+        margin: 0 auto;
+    }
+
+    .accordion-header {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+    }
+
+    .week-number {
+        min-width: auto;
+    }
+
+    .week-title {
+        font-size: 17px;
+    }
+
+    .week-details {
+        padding: 0 20px 20px 20px;
     }
 }
 
