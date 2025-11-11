@@ -1,0 +1,87 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <circle cx="150" cy="150" r="140" fill="#F5F5F7" opacity="0.4"/>
+  
+  <!-- Neural Network -->
+  <!-- Input Layer -->
+  <g>
+    <circle cx="70" cy="100" r="12" fill="#86868B" stroke="#424245" stroke-width="2"/>
+    <circle cx="70" cy="150" r="12" fill="#86868B" stroke="#424245" stroke-width="2"/>
+    <circle cx="70" cy="200" r="12" fill="#86868B" stroke="#424245" stroke-width="2"/>
+  </g>
+  
+  <!-- Hidden Layer 1 -->
+  <g>
+    <circle cx="140" cy="80" r="12" fill="#636366" stroke="#424245" stroke-width="2"/>
+    <circle cx="140" cy="130" r="12" fill="#636366" stroke="#424245" stroke-width="2"/>
+    <circle cx="140" cy="180" r="12" fill="#636366" stroke="#424245" stroke-width="2"/>
+    <circle cx="140" cy="220" r="12" fill="#636366" stroke="#424245" stroke-width="2"/>
+  </g>
+  
+  <!-- Hidden Layer 2 -->
+  <g>
+    <circle cx="200" cy="100" r="12" fill="#424245" stroke="#1d1d1f" stroke-width="2"/>
+    <circle cx="200" cy="150" r="12" fill="#424245" stroke="#1d1d1f" stroke-width="2"/>
+    <circle cx="200" cy="200" r="12" fill="#424245" stroke="#1d1d1f" stroke-width="2"/>
+  </g>
+  
+  <!-- Output Layer -->
+  <circle cx="260" cy="150" r="14" fill="#424245" stroke="#1d1d1f" stroke-width="2"/>
+  
+  <!-- Connections (Input to Hidden 1) -->
+  <g opacity="0.3">
+    <line x1="82" y1="100" x2="128" y2="80" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="100" x2="128" y2="130" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="100" x2="128" y2="180" stroke="#424245" stroke-width="1.5"/>
+    
+    <line x1="82" y1="150" x2="128" y2="80" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="150" x2="128" y2="130" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="150" x2="128" y2="180" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="150" x2="128" y2="220" stroke="#424245" stroke-width="1.5"/>
+    
+    <line x1="82" y1="200" x2="128" y2="130" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="200" x2="128" y2="180" stroke="#424245" stroke-width="1.5"/>
+    <line x1="82" y1="200" x2="128" y2="220" stroke="#424245" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Connections (Hidden 1 to Hidden 2) -->
+  <g opacity="0.4">
+    <line x1="152" y1="80" x2="188" y2="100" stroke="#636366" stroke-width="2"/>
+    <line x1="152" y1="130" x2="188" y2="150" stroke="#636366" stroke-width="2"/>
+    <line x1="152" y1="180" x2="188" y2="200" stroke="#636366" stroke-width="2"/>
+    
+    <line x1="152" y1="80" x2="188" y2="150" stroke="#636366" stroke-width="1.5"/>
+    <line x1="152" y1="130" x2="188" y2="100" stroke="#636366" stroke-width="1.5"/>
+    <line x1="152" y1="180" x2="188" y2="150" stroke="#636366" stroke-width="1.5"/>
+    <line x1="152" y1="220" x2="188" y2="200" stroke="#636366" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Connections (Hidden 2 to Output) -->
+  <g opacity="0.5">
+    <line x1="212" y1="100" x2="246" y2="145" stroke="#424245" stroke-width="2.5"/>
+    <line x1="212" y1="150" x2="246" y2="150" stroke="#424245" stroke-width="2.5"/>
+    <line x1="212" y1="200" x2="246" y2="155" stroke="#424245" stroke-width="2.5"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="55" y="60" font-family="Arial" font-size="11" fill="#636366" font-weight="600">Input</text>
+  <text x="120" y="50" font-family="Arial" font-size="11" fill="#636366" font-weight="600">Hidden</text>
+  <text x="235" y="60" font-family="Arial" font-size="11" fill="#636366" font-weight="600">Output</text>
+  
+  <!-- Data flow arrows -->
+  <g opacity="0.6">
+    <path d="M 30 150 L 50 150" stroke="#86868B" stroke-width="2"/>
+    <path d="M 50 150 L 45 147 L 45 153 Z" fill="#86868B"/>
+  </g>
+  
+  <!-- Brain icon in corner -->
+  <g transform="translate(240, 240)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#424245" stroke-width="2"/>
+    <path d="M -15 -8 Q -10 -15 0 -12 Q 10 -15 15 -8" stroke="#424245" stroke-width="2" fill="none"/>
+    <path d="M -15 8 Q -10 15 0 12 Q 10 15 15 8" stroke="#424245" stroke-width="2" fill="none"/>
+    <path d="M -12 -5 Q -8 0 -12 5" stroke="#424245" stroke-width="1.5" fill="none"/>
+    <path d="M 0 -5 Q 4 0 0 5" stroke="#424245" stroke-width="1.5" fill="none"/>
+    <path d="M 12 -5 Q 8 0 12 5" stroke="#424245" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>
+
